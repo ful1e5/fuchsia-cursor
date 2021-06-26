@@ -5,14 +5,14 @@ interface Config {
   color: Colors;
 }
 
-const fucshia = "#FF00FF";
+const fuchsia = "#FF00FF";
 const white = "#FFFFFF";
 
 const config: Config[] = [
   {
-    themeName: "Fucshia",
+    themeName: "Fuchsia",
     color: {
-      base: fucshia,
+      base: fuchsia,
       outline: white,
     },
   },

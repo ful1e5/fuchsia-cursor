@@ -1,6 +1,6 @@
 {
   "name": "fucshia-cursor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fuchsia's cursor for Windows and Unix",
   "main": "index.js",
   "repository": "git@github.com:ful1e5/fuchsia-cursor.git",

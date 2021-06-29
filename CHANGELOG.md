@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- compress binaries by `make release`
+
 ### Changed
 
 - Figma file link updated

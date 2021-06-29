@@ -108,12 +108,12 @@ sudo mv Fuchsia /usr/share/icons/
 
 #### Preview:
 
-> Check Figma file [here](https://www.figma.com/file/jPmS71GFhBN4NUTZx4VHbg/Fucshia-Cursor?node-id=0%3A1)
+> Check Figma file [here](https://www.figma.com/file/jPmS71GFhBN4NUTZx4VHbg/Fuchsia-Cursor?node-id=0%3A1)
 
 <!-- Preview -->
 
 <p align="center">
-  <img title="Fuchsia" src="https://imgur.com/CEDtj1e.png">
+  <img title="Fuchsia" src="https://imgur.com/stQKyrc.png">
   </br>
   <sub>Fuchsia Cursors</sub>
 </p>

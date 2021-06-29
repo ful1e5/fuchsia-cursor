@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.1] - 29 Jun 2021
+
+### Added
+
+- compress binaries by `make release`
+
+### Changed
+
+- Figma file link updated
+- `hand2` cursor dot size decreased
+
 ## [v1.0.0] - 27 Jun 2021
 
 ### Added

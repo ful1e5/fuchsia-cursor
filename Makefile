@@ -49,3 +49,11 @@ uninstall:
 	@fi
 
 reinstall: uninstall install
+
+# generates binaries
+BIN_DIR = ../bin
+release: bitmaps themes
+	@rm -rf bin && mkdir bin
+	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@cd themes && tar -czvf $(BIN_DIR)/Fuchsia.tar.gz Fuchsia/ && cd ..
+	@cd themes && zip -r $(BIN_DIR)/Fuchsia-Windows.zip Fuchsia-Windows && cd ..

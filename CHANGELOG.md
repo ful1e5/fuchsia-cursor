@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- [pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md) configuration init
+
 ## [v1.0.1] - 29 Jun 2021
 
 ### Added

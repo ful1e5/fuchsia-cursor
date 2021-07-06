@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from fbuild.configure import get_config
-from fbuild.generator import xbuild, wbuild, build, Info
+from src.configure import get_config
+from src.generator import Info, build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="fuchsia_builder",

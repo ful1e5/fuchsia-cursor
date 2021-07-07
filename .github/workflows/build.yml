@@ -63,6 +63,7 @@ jobs:
       - name: Compressing UNIX theme
         run: |
           tar -cvzf Fuchsia.tar.gz themes/Fuchsia
+          tar -cvzf Fuchsia-Pop!.tar.gz themes/Fuchsia-Pop!
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
@@ -76,8 +77,20 @@ jobs:
           name: Fuchsia
           path: Fuchsia.tar.gz
 
+      - name: Uploading `Fuchsia-Pop!` UNIX Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Fuchsia-Pop!
+          path: Fuchsia-Pop!.tar.gz
+
       - name: Uploading `Fuchsia` Windows Theme artifact
         uses: actions/upload-artifact@v2
         with:
           name: Fuchsia-Windows
           path: themes/Fuchsia-Windows/*
+
+      - name: Uploading `Fuchsia-Pop!` Windows Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Fuchsia-Pop!-Windows
+          path: themes/Fuchsia-Pop!-Windows/*

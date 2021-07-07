@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - [pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md) configuration init
+- `make prepare` command for preparing Fuchsia binaries
+
+### Changed
+
+- Removed **clean** target from `builder/Makefile`
+- Compact code inside `builder/*`
+- Builder code moved to `src`
+- Import `src` module directly inside `build.py`
+- `Makefile` and `builder/Makefile` build targets now supports `THEMES` variable
 
 ## [v1.0.1] - 29 Jun 2021
 

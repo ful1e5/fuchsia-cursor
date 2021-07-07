@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Fuchsia cursor color changed to `#e11c79` from `#ff00ff`
 - Removed **clean** target from `builder/Makefile`
 - Compact code inside `builder/*`
 - Builder code moved to `src`

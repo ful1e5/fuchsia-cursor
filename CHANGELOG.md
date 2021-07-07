@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Fuchsia-Pop! (based on popOS color)
 - [pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md) configuration init
 - `make prepare` command for preparing Fuchsia binaries
 

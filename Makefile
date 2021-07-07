@@ -1,10 +1,10 @@
 all: clean render build
 
 unix: clean render bitmaps
-	@cd builder && make build_unix clean
+	@cd builder && make build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows clean
+	@cd builder && make build_windows
 
 .PHONY: all
 
@@ -15,18 +15,18 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && make setup build clean
+	@cd builder && make setup build
 
 .ONESHELL:
 SHELL:=/bin/bash
 
 
-src = ./themes/Fuchsia
+src = ./themes/Fuchsia*
 local := ~/.icons
-local_dest := $(local)/Fuchsia
+local_dest := $(local)/Fuchsia*
 
 root := /usr/share/icons
-root_dest := $(root)/Fuchsia
+root_dest := $(root)/Fuchsia*
 
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
@@ -52,8 +52,13 @@ reinstall: uninstall install
 
 # generates binaries
 BIN_DIR = ../bin
-release: bitmaps themes
+THEMES = Pop!
+prepare: bitmaps themes
 	@rm -rf bin && mkdir bin
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
-	@cd themes && tar -czvf $(BIN_DIR)/Fuchsia.tar.gz Fuchsia/ && cd ..
-	@cd themes && zip -r $(BIN_DIR)/Fuchsia-Windows.zip Fuchsia-Windows && cd ..
+	@cd themes
+	@tar -czvf $(BIN_DIR)/Fuchsia.tar.gz Fuchsia
+	@zip -r $(BIN_DIR)/Fuchsia-Windows.zip Fuchsia-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/Fuchsia-$(theme).tar.gz Fuchsia-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/Fuchsia-$(theme)-Windows.zip Fuchsia-$(theme)-Windows;)
+	@cd ..

@@ -5,14 +5,22 @@ interface Config {
   color: Colors;
 }
 
-const fuchsia = "#FF00FF";
-const white = "#FFFFFF";
+const fuchsia = "#e11c79";
+const pop = "#f8b572";
+const white = "#ffffff";
 
 const config: Config[] = [
   {
     themeName: "Fuchsia",
     color: {
       base: fuchsia,
+      outline: white,
+    },
+  },
+  {
+    themeName: "Fuchsia-Pop!",
+    color: {
+      base: pop,
       outline: white,
     },
   },

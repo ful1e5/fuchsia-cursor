@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.3] - 5 Aug 2021
+
+### Changed
+
+- `busy` and `work` animation fixed on windows side #4
+
 ## [v1.0.2] - 7 Jul 2021
 
 ### Added
@@ -43,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.2...main
+[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...main
+[v1.0.3]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.0...v1.0.1
 [v1.0.0]: https://github.com/ful1e5/fuchsia-cursor/tree/v1.0.0

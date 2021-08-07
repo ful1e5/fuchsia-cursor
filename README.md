@@ -113,13 +113,13 @@ sudo mv Fuchsia /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="Fuchsia" src="https://i.imgur.com/mPpwux9.png">
+  <img title="Fuchsia" src="https://imgur.com/2MwCf35.png">
   </br>
   <sub>Fuchsia Cursors</sub>
 </p>
 
 <p align="center">
-  <img title="Fuchsia Pop!" src="https://i.imgur.com/ABWcZAV.png">
+  <img title="Fuchsia Pop!" src="https://imgur.com/h9UYn37.png">
   </br>
   <sub>Fuchsia Pop! Cursors</sub>
 </p>

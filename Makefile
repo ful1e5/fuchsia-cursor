@@ -54,8 +54,10 @@ reinstall: uninstall install
 BIN_DIR = ../bin
 THEMES = Pop!
 prepare: bitmaps themes
+	# bitmaps
 	@rm -rf bin && mkdir bin
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	# themes
 	@cd themes
 	@tar -czvf $(BIN_DIR)/Fuchsia.tar.gz Fuchsia
 	@zip -r $(BIN_DIR)/Fuchsia-Windows.zip Fuchsia-Windows

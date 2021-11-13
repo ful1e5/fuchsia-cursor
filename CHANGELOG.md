@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- use `THEME_PREFIX` variable inside `make` commands
+- distributed binaries inside `bin` directory
+
 ### Changed
 
 - Typo fixed inside preview
+- documented logs inside bitmapping
 
 ## [v1.0.3] - 5 Aug 2021
 

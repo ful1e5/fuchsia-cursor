@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - use `THEME_PREFIX` variable inside `make` commands
+- distributed binaries inside `bin` directory
 
 ### Changed
 

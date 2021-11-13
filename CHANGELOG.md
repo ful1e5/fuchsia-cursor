@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Typo fixed inside preview
+- documented logs inside bitmapping
 
 ## [v1.0.3] - 5 Aug 2021
 

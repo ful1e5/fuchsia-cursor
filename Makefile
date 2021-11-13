@@ -19,32 +19,33 @@ build: bitmaps
 
 .ONESHELL:
 SHELL:=/bin/bash
+THEME_PREFIX = Fuchsia
 
 
-src = ./themes/Fuchsia*
+src = ./themes/$(THEME_PREFIX)*
 local := ~/.icons
-local_dest := $(local)/Fuchsia*
+local_dest := $(local)/$(THEME_PREFIX)*
 
 root := /usr/share/icons
-root_dest := $(root)/Fuchsia*
+root_dest := $(root)/$(THEME_PREFIX)*
 
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing 'Fuchsia' cursors inside $(local)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(local)/..."
 		@mkdir -p $(local)
 		@cp -r $(src) $(local)/ && echo "> Installed!"
 	@else
-		@echo "> Installing 'Fuchsia' cursors inside $(root)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(root)/..."
 		@mkdir -p $(root)
 		@sudo cp -r $(src) $(root)/ && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing 'Fuchsia' cursors from '$(local)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(local)'..."
 		@rm -rf $(local_dest)
 	@else
-		@echo "> Removing 'Fuchsia' cursors from '$(root)'..."
+		@echo "> Removing '$(THEME_PREFIX)' cursors from '$(root)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
 

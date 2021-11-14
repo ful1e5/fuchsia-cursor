@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Typo fixed inside preview
 - documented logs inside bitmapping
 - minimal README.md (removed badges and emojis)
+- bitmaps artifacts fixed in CI
 
 ## [v1.0.3] - 5 Aug 2021
 

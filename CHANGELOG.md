@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - use `THEME_PREFIX` variable inside `make` commands
 - distributed binaries inside `bin` directory
+- pling product's docs inside `pling` directory
 
 ### Changed
 

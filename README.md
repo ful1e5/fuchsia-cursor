@@ -19,11 +19,8 @@ First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux
 
 #### Quick install
 
-<p align="center">
-  <a href="https://www.pling.com/p/1544830/#files-panel" >
-    <img title="Fuck Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
-  </a>
-</p>
+- Fuchsia:[https://www.pling.com/p/1544830](https://www.pling.com/p/1544830)
+- Fuchsia-Pop!:[https://www.pling.com/p/1641968](https://www.pling.com/p/1641968)
 
 ### Manual Install
 

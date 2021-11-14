@@ -1,64 +1,6 @@
-<!-- Branding -->
-<p align="center">
-  <img src="https://imgur.com/J6IGylW.png" width="200" />
-</p>
-
-<p align="center">
-    ⭕ 🔴  Fuchsia's cursor for Windows and Unix
-</p>
-
-<!-- Badges -->
-<p align="center">
-  <!-- First Row -->
-  <a href="https://github.com/ful1e5/fuchsia-cursor/actions">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/fuchsia-cursor/actions/workflows/build.yml/badge.svg" width="102" />
-  </a>
-
-  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
-    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
-  </a>
-
-  <a href="https://github.com/ful1e5/clickgen">
-    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
-  </a>
-
-  <!-- Second Row -->
-  <br />
-  <a href="https://github.com/ful1e5/fuchsia-cursor/releases">
-    <img alt="Fuchsia release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/fuchsia-cursor?include_prereleases" />
-  </a>
-
-  <a href="https://github.com/ful1e5/fuchsia-cursor/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/ful1e5/fuchsia-cursor?color=0081FB" />
-  </a>
-
-  <br />
-  <!-- TODO: -->
-  <a href="https://www.pling.com/p/1544830/#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
-  </a>
-
-  <a href="https://www.pling.com/p/1544830/#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
-  </a>
-
-  <a href="https://www.python.org/">
-    <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
-  </a>
- <!-- Fourth Row -->
-  <br />
-  <a href="https://github.com/ful1e5">
-    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
-  </a>
-</p>
-
----
-
-<!-- Intro -->
-
 # Fuchsia Cursor
 
-The OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux** and **Windows**.
+First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux** and **Windows**.
 
 #### Cursor Sizes
 
@@ -77,11 +19,8 @@ The OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux**
 
 #### Quick install
 
-<p align="center">
-  <a href="https://www.pling.com/p/1544830/#files-panel" >
-    <img title="Fuck Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
-  </a>
-</p>
+- Fuchsia:[https://www.pling.com/p/1544830](https://www.pling.com/p/1544830)
+- Fuchsia-Pop!:[https://www.pling.com/p/1641968](https://www.pling.com/p/1641968)
 
 ### Manual Install
 
@@ -110,8 +49,6 @@ sudo mv Fuchsia /usr/share/icons/
 
 > Check Figma file [here](https://www.figma.com/file/jPmS71GFhBN4NUTZx4VHbg/Fuchsia-Cursor?node-id=0%3A1)
 
-<!-- Preview -->
-
 <p align="center">
   <img title="Fuchsia" src="https://imgur.com/2MwCf35.png">
   </br>
@@ -123,8 +60,6 @@ sudo mv Fuchsia /usr/share/icons/
   </br>
   <sub>Fuchsia Pop! Cursors</sub>
 </p>
-
-<!-- Build Dependencies -->
 
 # Dependencies
 
@@ -182,7 +117,7 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build From Scratch
 
-### ⚡ Auto Build (using GitHub Actions)
+### Auto Build (using GitHub Actions)
 
 GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** source is available inside [.github/workflows](https://github.com/ful1e5/fuchsia-cursor/tree/main/.github/workflows) directory.
 
@@ -227,41 +162,14 @@ make windows WIN_SIZE=96            # Provide only one pixel-size
 
 > For installation follow [these](#windows) steps.
 
-<!-- Bug Report -->
-
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/fuchsia-cursor/issues) on the Github issues page.
-
-<!-- Help -->
+Bugs should be reported [here](https://github.com/ful1e5/fuchsia-cursor/issues) on the Github issues page.
 
 # Getting Help
 
 You can create a **issue**, I will help you. 🙂
 
-<!-- Contributions and Suggestion -->
-
 # Contributing
 
 Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
-
-<!-- Support -->
-
-## Support
-
-Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
-
-> For more support
-
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-
-<!-- Ninja  -->
-
-<h1 align="center">
-  ( `ω´ )۶▬ι═══════ﺤ
-</h1>
-<p align="center">
-  <sub>I'm Using Katana </sub>
-</p>

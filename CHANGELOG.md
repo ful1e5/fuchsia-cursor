@@ -7,23 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.4] - 14 Nov 2021
+
 ### Added
 
 - use `THEME_PREFIX` variable inside `make` commands
 - distributed binaries inside `bin` directory
+- pling product's docs inside `pling` directory
 
 ### Changed
 
 - Typo fixed inside preview
 - documented logs inside bitmapping
+- minimal README.md (removed badges and emojis)
+- bitmaps artifacts fixed in CI
 
-## [v1.0.3] - 5 Aug 2021
+## [v1.0.3] - 05 Aug 2021
 
 ### Changed
 
 - `busy` and `work` animation fixed on windows side #4
 
-## [v1.0.2] - 7 Jul 2021
+## [v1.0.2] - 07 Jul 2021
 
 ### Added
 
@@ -59,7 +64,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...main
+[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.4...main
+[v1.0.4]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.0...v1.0.1

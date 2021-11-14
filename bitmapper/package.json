@@ -1,7 +1,7 @@
 {
-  "name": "fucshia-cursor",
-  "version": "1.0.3",
-  "description": "Fuchsia's cursor for Windows and Unix",
+  "name": "fuchsia-cursor",
+  "version": "1.0.4",
+  "description": "First OpenSource port of FuchsiaOS cursors for Linux and Windows.",
   "main": "index.js",
   "repository": "git@github.com:ful1e5/fuchsia-cursor.git",
   "author": "Kaiz Khatri",

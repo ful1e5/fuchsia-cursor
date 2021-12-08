@@ -25,6 +25,7 @@ First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux
 
 - Fuchsia:[https://www.pling.com/p/1544830](https://www.pling.com/p/1544830)
 - Fuchsia-Pop!:[https://www.pling.com/p/1641968](https://www.pling.com/p/1641968)
+- Fuchsia-Red:[https://www.pling.com/p/1660999](https://www.pling.com/p/1660999)
 
 ### Manual Install
 
@@ -63,6 +64,12 @@ sudo mv Fuchsia /usr/share/icons/
   <img title="Fuchsia Pop!" src="https://imgur.com/h9UYn37.png">
   </br>
   <sub>Fuchsia Pop! Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="Fuchsia Red" src="https://imgur.com/oheg7Wl.png">
+  </br>
+  <sub>Fuchsia Red Cursors</sub>
 </p>
 
 # Dependencies

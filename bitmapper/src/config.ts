@@ -8,6 +8,7 @@ interface Config {
 const fuchsia = "#e11c79";
 const pop = "#f8b572";
 const white = "#ffffff";
+const red = "#ff0000";
 
 const config: Config[] = [
   {
@@ -21,6 +22,13 @@ const config: Config[] = [
     themeName: "Fuchsia-Pop!",
     color: {
       base: pop,
+      outline: white,
+    },
+  },
+  {
+    themeName: "Fuchsia-Red",
+    color: {
+      base: red,
       outline: white,
     },
   },

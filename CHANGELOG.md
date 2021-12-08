@@ -9,9 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Init Fuchsia-Red
+
 ### Changed
 
-- sponsorships updated
+- Sponsorships updated
+- Links updated inside all docs
+- `build` workflow updated for `Fuchsia-Red` variant
 
 ## [v1.0.4] - 14 Nov 2021
 

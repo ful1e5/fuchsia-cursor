@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Sponsorships updated
-- Links updated inisde all docs
+- Links updated inside all docs
 - `build` workflow updated for `Fuchsia-Red` variant
 
 ## [v1.0.4] - 14 Nov 2021

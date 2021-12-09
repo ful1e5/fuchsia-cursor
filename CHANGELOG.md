@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.0.5] - 09 Dec 2021
+
 ### Added
 
 - Init Fuchsia-Red
@@ -75,7 +77,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.4...main
+[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.5...main
+[v1.0.5]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.1...v1.0.2

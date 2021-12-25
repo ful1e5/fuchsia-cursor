@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
+
+### Changed
+
 ## [v1.0.5] - 09 Dec 2021
 
 ### Added

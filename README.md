@@ -6,7 +6,7 @@ First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux
 [![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/fuchsia-cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/fuchsia-cursor)
 [![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
 
-#### Cursor Sizes
+### Cursor Sizes
 
 <kbd>22</kbd>
 <kbd>24</kbd>
@@ -21,11 +21,33 @@ First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Quick install
+### Quick install
 
 - Fuchsia:[https://www.pling.com/p/1544830](https://www.pling.com/p/1544830)
 - Fuchsia-Pop!:[https://www.pling.com/p/1641968](https://www.pling.com/p/1641968)
 - Fuchsia-Red:[https://www.pling.com/p/1660999](https://www.pling.com/p/1660999)
+
+### Preview:
+
+> Check Figma file [here](https://www.figma.com/file/jPmS71GFhBN4NUTZx4VHbg/Fuchsia-Cursor?node-id=0%3A1)
+
+<p align="center">
+  <img title="Fuchsia" src="https://imgur.com/2MwCf35.png">
+  </br>
+  <sub>Fuchsia Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="Fuchsia Pop!" src="https://imgur.com/h9UYn37.png">
+  </br>
+  <sub>Fuchsia Pop! Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="Fuchsia Red" src="https://imgur.com/oheg7Wl.png">
+  </br>
+  <sub>Fuchsia Red Cursors</sub>
+</p>
 
 ### Manual Install
 
@@ -50,27 +72,25 @@ sudo mv Fuchsia /usr/share/icons/
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **Fuchsia Cursors**.
 5. Click '**Apply**'.
 
-#### Preview:
+### Uninstall
 
-> Check Figma file [here](https://www.figma.com/file/jPmS71GFhBN4NUTZx4VHbg/Fuchsia-Cursor?node-id=0%3A1)
+#### Linux/X11
 
-<p align="center">
-  <img title="Fuchsia" src="https://imgur.com/2MwCf35.png">
-  </br>
-  <sub>Fuchsia Cursors</sub>
-</p>
+```bash
+# From local users
+rm -rf ~/.icons/Fuchsia
 
-<p align="center">
-  <img title="Fuchsia Pop!" src="https://imgur.com/h9UYn37.png">
-  </br>
-  <sub>Fuchsia Pop! Cursors</sub>
-</p>
+# From all users
+sudo rm -rf /usr/share/icons/Fuchsia
+```
 
-<p align="center">
-  <img title="Fuchsia Red" src="https://imgur.com/oheg7Wl.png">
-  </br>
-  <sub>Fuchsia Red Cursors</sub>
-</p>
+#### Windows
+
+1. Go to **Registry Editor** by typing the same in the _start search box_.
+2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
+3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
+4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _Fuchsia Cursors_ and click `Delete`.
+5. Click '**yes**' when prompted.
 
 # Dependencies
 

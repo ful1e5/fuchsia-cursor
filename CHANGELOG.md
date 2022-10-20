@@ -9,12 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- LICENSE: GNU General Public License v3
 - Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
 - uninstall docs added ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
+- README.md: Human readable docs
 
 ### Changed
 
--
+- refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
+- refactor: build cursor with [clickgen v2](https://github.com/ful1e5/clickgen)
 
 ## [v1.0.5] - 09 Dec 2021
 

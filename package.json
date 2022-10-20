@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cbmp": "ful1e5/cbmp"
+  },
+  "scripts": {
+    "render:fuchsia": "npx cbmp -d 'svg' -n 'Fuchsia' -bc '#E11C79' -oc '#FFFFFF'",
+    "render:fuchsia-pop": "npx cbmp -d 'svg' -n 'Fuchsia-Pop' -bc '#F8B572' -oc '#FFFFFF'",
+    "render:fuchsia-red": "npx cbmp -d 'svg' -n 'Fuchsia-Red' -bc '#FF0000' -oc '#FFFFFF'",
+    "render": "yarn render:fuchsia && yarn render:fuchsia-pop && yarn render:fuchsia-red",
+    "build:fuchsia": "ctgen build.toml -d 'bitmaps/Fuchsia' -n 'Fuchsia' -c 'Fuchsia cursors.'",
+    "build:fuchsia-pop": "ctgen build.toml -d 'bitmaps/Fuchsia-Pop' -n 'Fuchsia-Pop' -c 'Fuchsia Pop! cursors.'",
+    "build:fuchsia-red": "ctgen build.toml -d 'bitmaps/Fuchsia-Red' -n 'Fuchsia-Red' -c 'Fuchsia Red cursors.'",
+    "build": "yarn build:fuchsia && yarn build:fuchsia-pop && yarn build:fuchsia-red"
+  }
+}

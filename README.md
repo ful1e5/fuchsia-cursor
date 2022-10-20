@@ -1,10 +1,8 @@
 # Fuchsia Cursor
 
-First OpenSource port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux** and **Windows**.
+First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux** and **Windows**.
 
 [![build](https://github.com/ful1e5/fuchsia-cursor/actions/workflows/build.yml/badge.svg)](https://github.com/ful1e5/fuchsia-cursor/actions)
-[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/fuchsia-cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/fuchsia-cursor)
-[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
 
 ### Cursor Sizes
 

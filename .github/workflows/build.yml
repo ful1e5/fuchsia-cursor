@@ -46,4 +46,3 @@ jobs:
 
       - name: Building `Fuchsia Red` Cursors
         run: ctgen build.toml -d 'bitmaps/Fuchsia-Red' -n 'Fuchsia-Red' -c 'Fuchsia Red cursors.'
-        run: ctgen build.toml -d 'bitmaps/BreezeX-Black' -n 'BreezeX-Black' -c 'BreezeX Black cursors.'

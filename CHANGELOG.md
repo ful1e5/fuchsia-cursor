@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.0] - 21 October 2022
+
 ### Added
 
 - LICENSE: GNU General Public License v3
@@ -19,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
 - refactor: build cursor with [clickgen v2](https://github.com/ful1e5/clickgen)
 
-## [v1.0.5] - 09 Dec 2021
+## [v1.0.5] - 09 December 2021
 
 ### Added
 
@@ -31,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Links updated inside all docs
 - `build` workflow updated for `Fuchsia-Red` variant
 
-## [v1.0.4] - 14 Nov 2021
+## [v1.0.4] - 14 November 2021
 
 ### Added
 
@@ -47,13 +49,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - minimal README.md (removed badges and emojis)
 - bitmaps artifacts fixed in CI
 
-## [v1.0.3] - 05 Aug 2021
+## [v1.0.3] - 05 August 2021
 
 ### Changed
 
 - `busy` and `work` animation fixed on windows side #4
 
-## [v1.0.2] - 07 Jul 2021
+## [v1.0.2] - 07 July 2021
 
 ### Added
 
@@ -70,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Import `src` module directly inside `build.py`
 - `Makefile` and `builder/Makefile` build targets now supports `THEMES` variable
 
-## [v1.0.1] - 29 Jun 2021
+## [v1.0.1] - 29 June 2021
 
 ### Added
 
@@ -81,7 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Figma file link updated
 - `hand2` cursor dot size decreased
 
-## [v1.0.0] - 27 Jun 2021
+## [v1.0.0] - 27 June 2021
 
 ### Added
 
@@ -89,7 +91,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.5...main
+[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v2.0.0...main
+[v2.0.0]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.5...v2.0.0
 [v1.0.5]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.2...v1.0.3

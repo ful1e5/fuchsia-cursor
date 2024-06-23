@@ -1,0 +1,26 @@
+{
+  "Fuchsia": {
+    "dir": "svg",
+    "out": "bitmaps/Fuchsia",
+    "colors": [
+      { "match": "#00FF00", "replace": "#E11C79" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  },
+  "Fuchsia-Pop": {
+    "dir": "svg",
+    "out": "bitmaps/Fuchsia-Pop",
+    "colors": [
+      { "match": "#00FF00", "replace": "#F8B572" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  },
+  "Fuchsia-Red": {
+    "dir": "svg",
+    "out": "bitmaps/Fuchsia-Red",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FF0000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  }
+}

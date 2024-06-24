@@ -7,89 +7,117 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### :warning: Changes for Developers/Package Distributors
+
+> **Note**
+> This change applies only to developers and package distributors
+
+-   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
+
+-   The `build.toml` file has been removed. Instead, the cursor build configurations are now distributed according to platforms within the `configs` directory:
+    -   `configs/x.build.toml`: Used to build XCursor.
+    -   `configs/win_rg.build.toml`: Used to build regular size Windows cursors.
+    -   `configs/win_lg.build.toml`: Used to build large size Windows cursors.
+    -   `configs/win_xxl.build.toml`: Used to build extra large size Windows cursors.
+
+### What's New?
+
+-   Support `256px` cursors
+-   feat: Added `Person` and `Pin` cursors for Windows
+-   Official Distributing `16` and `20` XCursors
+-   Multi Resolution Windows Cursors
+-   Attach version meta-data inside cursor packages
+-   Using [cbmp v1.1.1](https://github.com/ful1e5/cbmp/tree/v1.1.1) for rendering cursor bitmaps.
+
+### Changes
+
+-   build script renamed (`release.sh` -> `build.sh`)
+-   Use 'xz' for better compression in `build.sh` script
+-   De-framed animated cursors to static SVG files
+
 ## [v2.0.0] - 21 October 2022
 
 ### Added
 
-- LICENSE: GNU General Public License v3
-- Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
-- uninstall docs added ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
-- README.md: Human readable docs
+-   README.md: Human readable docs
+-   uninstall docs added ful1e5/apple_cursor#79 ful1e5/apple_cursor#80
+-   Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
+-   LICENSE: GNU General Public License v3
 
 ### Changed
 
-- refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
-- refactor: build cursor with [clickgen v2](https://github.com/ful1e5/clickgen)
+-   refactor: build cursor with [clickgen v2](https://github.com/ful1e5/clickgen)
+-   refactor: bitmapper moved to individual project [cbmp](https://github.com/ful1e5/cbmp)
 
 ## [v1.0.5] - 09 December 2021
 
 ### Added
 
-- Init Fuchsia-Red
+-   Init Fuchsia-Red
 
 ### Changed
 
-- Sponsorships updated
-- Links updated inside all docs
-- `build` workflow updated for `Fuchsia-Red` variant
+-   `build` workflow updated for `Fuchsia-Red` variant
+-   Links updated inside all docs
+-   Sponsorships updated
 
 ## [v1.0.4] - 14 November 2021
 
 ### Added
 
-- use `THEME_PREFIX` variable inside `make` commands
-- distributed binaries inside `bin` directory
-- pling product's docs inside `pling` directory
-- windows animated cursor's delay updated ( repatched #4 )
+-   windows animated cursor's delay updated ( repatched #4 )
+-   pling product's docs inside `pling` directory
+-   distributed binaries inside `bin` directory
+-   use `THEME_PREFIX` variable inside `make` commands
 
 ### Changed
 
-- Typo fixed inside preview
-- documented logs inside bitmapping
-- minimal README.md (removed badges and emojis)
-- bitmaps artifacts fixed in CI
+-   bitmaps artifacts fixed in CI
+-   minimal README.md (removed badges and emojis)
+-   documented logs inside bitmapping
+-   Typo fixed inside preview
 
 ## [v1.0.3] - 05 August 2021
 
 ### Changed
 
-- `busy` and `work` animation fixed on windows side #4
+-   `busy` and `work` animation fixed on windows side #4
 
 ## [v1.0.2] - 07 July 2021
 
 ### Added
 
-- Fuchsia-Pop! (based on popOS color)
-- [pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md) configuration init
-- `make prepare` command for preparing Fuchsia binaries
+-   `make prepare` command for preparing Fuchsia binaries
+-   [pyright](https://github.com/microsoft/pyright/blob/main/docs/configuration.md) configuration init
+-   Fuchsia-Pop! (based on popOS color)
 
 ### Changed
 
-- Fuchsia cursor color changed to `#e11c79` from `#ff00ff`
-- Removed **clean** target from `builder/Makefile`
-- Compact code inside `builder/*`
-- Builder code moved to `src`
-- Import `src` module directly inside `build.py`
-- `Makefile` and `builder/Makefile` build targets now supports `THEMES` variable
+-   `Makefile` and `builder/Makefile` build targets now supports `THEMES` variable
+-   Import `src` module directly inside `build.py`
+-   Builder code moved to `src`
+-   Compact code inside `builder/*`
+-   Removed **clean** target from `builder/Makefile`
+-   Fuchsia cursor color changed to `#e11c79` from `#ff00ff`
 
 ## [v1.0.1] - 29 June 2021
 
 ### Added
 
-- compress binaries by `make release`
+-   compress binaries by `make release`
 
 ### Changed
 
-- Figma file link updated
-- `hand2` cursor dot size decreased
+-   `hand2` cursor dot size decreased
+-   Figma file link updated
 
 ## [v1.0.0] - 27 June 2021
 
 ### Added
 
-- Initial release 🎊
-- Logo and badges
-- CI/CD Pipelines
+-   CI/CD Pipelines
+-   Logo and badges
+-   Initial release 🎊
 
 [unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v2.0.0...main
 [v2.0.0]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.5...v2.0.0

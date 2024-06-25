@@ -37,7 +37,7 @@ names["Fuchsia-Pop"]=$(with_version "Fuchsia Pop!")
 # Cleanup old builds
 rm -rf themes bin
 
-# Building Apple XCursor binaries
+# Building Fuchsia XCursor binaries
 for key in "${!names[@]}"; do
   comment="${names[$key]}"
   cfg=$(get_config_file key)

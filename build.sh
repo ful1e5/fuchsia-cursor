@@ -70,9 +70,9 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
-# Compressing fuchsia.tar.xz
+# Compressing fuchsia-all.tar.xz
 cp ../LICENSE .
-tar -cJvf "../bin/fuchsia.tar.xz" --exclude="*-Windows" . &
+tar -cJvf "../bin/fuchsia-all.tar.xz" --exclude="*-Windows" . &
 PID=$!
 wait $PID
 

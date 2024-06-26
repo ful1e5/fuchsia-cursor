@@ -18,9 +18,10 @@ First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linu
 
 ---
 
-![Fuchsia](https://imgur.com/2MwCf35.png)
-![Fuchsia Pop](https://imgur.com/h9UYn37.png)
-![Fuchsia Red](https://imgur.com/oheg7Wl.png)
+![Fuchsia](https://github.com/ful1e5/fuchsia-cursor/assets/24286590/11dc68d3-fc78-4481-a829-2d05add9833a)
+![Fuchsia-Amber](https://github.com/ful1e5/fuchsia-cursor/assets/24286590/49213cb0-be9d-4159-8929-0fd5fcd8aee4)
+![Fuchsia-Red](https://github.com/ful1e5/fuchsia-cursor/assets/24286590/9d0b8668-6a0d-4176-a64c-1f7982926425)
+![Fuchsia-Pop!](https://github.com/ful1e5/fuchsia-cursor/assets/24286590/f53f5edd-67f3-4d56-97f3-bb80677a277a)
 
 ## Cursor Sizes
 
@@ -50,7 +51,6 @@ First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linu
 |   64 |     42.666 → 43 |     51.2 → 52 |                64 |
 |   96 |              64 |     76.8 → 77 |                96 |
 |  128 |     85.333 → 86 |   102.4 → 103 |               128 |
-|  256 |   170.666 → 171 |   204.8 → 205 |               256 |
 
 ## Colors
 
@@ -59,15 +59,20 @@ First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linu
 -   Outline Color - `#FFFFFF` (White)
 -   Base Color - `#E11C79` (Fuchsia)
 
-### Fuchsia Pop!
+### Fuchsia Amber
 
 -   Outline Color - `#FFFFFF` (White)
--   Base Color - `#F8B572` (PopOS Orange)
+-   Base Color - `#FFA400` (Amber)
 
 ### Fuchsia Red
 
 -   Outline Color - `#FFFFFF` (White)
 -   Base Color - `#FF0000` (Red)
+
+### Fuchsia Pop!
+
+-   Outline Color - `#FFFFFF` (White)
+-   Base Color - `#F8B572` (PopOS Orange)
 
 ## How to get it
 

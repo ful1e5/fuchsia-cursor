@@ -22,5 +22,13 @@
       { "match": "#00FF00", "replace": "#FF0000" },
       { "match": "#0000FF", "replace": "#FFFFFF" }
     ]
+  },
+  "Fuchsia-Amber": {
+    "dir": "svg",
+    "out": "bitmaps/Fuchsia-Amber",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFA400" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
   }
 }

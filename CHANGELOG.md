@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### What's New?
 
+-   Fuchsia Amber #11
 -   Support `256px` cursors
 -   feat: Added `Person` and `Pin` cursors for Windows
 -   Official Distributing `16` and `20` XCursors

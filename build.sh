@@ -33,6 +33,7 @@ declare -A names
 names["Fuchsia"]=$(with_version "Fuchsia")
 names["Fuchsia-Red"]=$(with_version "Fuchsia Red")
 names["Fuchsia-Pop"]=$(with_version "Fuchsia Pop!")
+names["Fuchsia-Amber"]=$(with_version "Fuchsia Yellowish")
 
 # Cleanup old builds
 rm -rf themes bin
@@ -47,14 +48,14 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
-# Building macOS Windows binaries
+# Building Fuchsia Windows binaries
 for key in "${!names[@]}"; do
   comment="${names[$key]}"
   cfg=$(get_config_file key)
 
   ctgen "configs/win_rg.$cfg" -d "bitmaps/$key" -n "$key-Regular" -c "$comment Regular Windows Cursors" &
-  # ctgen "configs/win_lg.$cfg" -d "bitmaps/$key" -n "$key-Large" -c "$comment Large Windows Cursors" &
-  # ctgen "configs/win_xl.$cfg" -d "bitmaps/$key" -n "$key-Extra-Large" -c "$comment Extra Large Windows Cursors" &
+  ctgen "configs/win_lg.$cfg" -d "bitmaps/$key" -n "$key-Large" -c "$comment Large Windows Cursors" &
+  ctgen "configs/win_xl.$cfg" -d "bitmaps/$key" -n "$key-Extra-Large" -c "$comment Extra Large Windows Cursors" &
   PID=$!
   wait $PID
 done
@@ -69,18 +70,18 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
-# Compressing macOS.tar.xz
+# Compressing fuchsia.tar.xz
 cp ../LICENSE .
 tar -cJvf "../bin/fuchsia.tar.xz" --exclude="*-Windows" . &
 PID=$!
 wait $PID
 
-# # Compressing macOS-*-Windows
-# for key in "${!names[@]}"; do
-#   zip -rv "../bin/${key}-Windows.zip" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
-#   PID=$!
-#   wait $PID
-# done
+# Compressing Fuchsia-*-Windows
+for key in "${!names[@]}"; do
+  zip -rv "../bin/${key}-Windows.zip" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
+  PID=$!
+  wait $PID
+done
 
 cd ..
 

@@ -1,4 +1,4 @@
-# Fuchsia Cursor
+![Fuchsia](https://github.com/ful1e5/fuchsia-cursor/assets/24286590/68223b08-7020-4cb6-8d97-090bacef62d6)
 
 First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linux** and **Windows**.
 

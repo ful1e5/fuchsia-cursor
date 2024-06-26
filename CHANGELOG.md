@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.1] - 26 June 2024
+
 ### :warning: Changes for Developers/Package Distributors
 
 > **Note**
@@ -120,7 +122,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Logo and badges
 -   Initial release 🎊
 
-[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v2.0.0...main
+[unreleased]: https://github.com/ful1e5/fuchsia-cursor/compare/v2.0.1...main
+[v2.0.1]: https://github.com/ful1e5/fuchsia-cursor/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.5...v2.0.0
 [v1.0.5]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/ful1e5/fuchsia-cursor/compare/v1.0.3...v1.0.4

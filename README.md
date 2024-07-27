@@ -13,7 +13,7 @@ First open source port of [FuchsiaOS](https://fuchsia.dev/)'s cursors for **Linu
 
 ![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
--   **2024-04-26**: [f3ca511](https://github.com/ful1e5/fuchsia-cursor/commit/f3ca5116adc9c428e56e248758d11d8d8cfaf682) Partitioned cursor build configuration into multiple files according to platform:
+-   **2024-06-24**: [f3ca511](https://github.com/ful1e5/fuchsia-cursor/commit/f3ca5116adc9c428e56e248758d11d8d8cfaf682) Partitioned cursor build configuration into multiple files according to platform:
     `build.toml` -> `configs/win_lg.build.toml`, `configs/win_rg.build.toml`, `configs/win_xl.build.toml`, `configs/x.build.toml`.
 
 ---
@@ -169,7 +169,7 @@ The process of creating custom cursor themes involves two main steps:
 3. `-wc` (optional): Watch Background color, which replaces the `#FF0000` color in the SVG.
 
 ```bash
-npx cbmp [...] -bc '<hex>' -oc '<hex>' -wc '<hex>'
+npx cbmp [...] -bc "<hex>" -oc "<hex>" -wc "<hex>"
 ```
 
 Alternatively, you can provide a JSON configuration file to render SVG files, which contains a sequence of `cbmp` commands:
@@ -185,13 +185,13 @@ npx cbmp render.json
 To build Windows cursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/Fuchsia' -n 'Fuchsia' -c 'First OpenSource port of FuchsiaOS Cursors with size 16'
+ctgen configs/x.build.toml -s 16 -p windows -d "bitmaps/Fuchsia" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS XCursors with size 16"
 ```
 
 You can also customize output directory with `-o` option:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/Fuchsia' -o 'out' -n 'Fuchsia' -c 'First OpenSource port of FuchsiaOS Cursors with size 16'
+ctgen configs/win_xl.build.toml -s 16 -p windows -d "bitmaps/Fuchsia" -o "out" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS Windows Cursors with size 16"
 ```
 
 ##### Customize XCursor size
@@ -199,13 +199,13 @@ ctgen build.toml -s 16 -p windows -d 'bitmaps/Fuchsia' -o 'out' -n 'Fuchsia' -c 
 To build XCursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p x11 -d 'bitmaps/Fuchsia' -n 'Fuchsia' -c 'FuchsiaOS Cursors with size 16'
+ctgen configs/x.build.toml -s 16 -p x11 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS Cursors with size 16"
 ```
 
 You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-ctgen build.toml -s 16 18 24 32 -p x11 -d 'bitmaps/Fuchsia' -n 'Fuchsia' -c 'FuchsiaOS Cursors with size 16'
+ctgen configs/x.build.toml -s 16 18 24 32 -p x11 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS Cursors with size 16"
 ```
 
 #### Examples
@@ -213,13 +213,13 @@ ctgen build.toml -s 16 18 24 32 -p x11 -d 'bitmaps/Fuchsia' -n 'Fuchsia' -c 'Fuc
 Lets generate Fuchsia Cursor with green and black colors:
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaps/Fuchsia-Hacker' -bc '#00FE00' -oc '#000000'
+npx cbmp -d "svg" -o "bitmaps/Fuchsia-Hacker" -bc "#00FE00" -oc "#000000"
 ```
 
 After rendering custom color you have to build cursor through `ctgen`:
 
 ```bash
-ctgen build.toml -d 'bitmaps/Fuchsia-Hacker' -n 'Fuchsia-Hacker' -c 'Green and Black FuchsiaOS cursors.'
+ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS XCursors."
 ```
 
 Afterwards, Generated theme can be found in the `themes` directory.
@@ -227,29 +227,45 @@ Afterwards, Generated theme can be found in the `themes` directory.
 ###### Fuchsia Gruvbox
 
 ```bash
-npx cbmp -d 'svg/original' -o 'bitmaps/Fuchsia-Gruvbox' -bc '#282828' -oc '#EBDBB2'
-ctgen build.toml -d 'bitmaps/Fuchsia-Gruvbox' -n 'Fuchsia-Gruvbox' -c 'Groovy FuchsiaOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/Fuchsia-Gruvbox" -bc "#282828" -oc "#EBDBB2"
+
+ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Gruvbox" -n "Fuchsia-Gruvbox" -c "Groovy FuchsiaOS XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/Fuchsia-Gruvbox" -n "Fuchsia-Gruvbox" -c "Groovy FuchsiaOS Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/Fuchsia-Gruvbox" -n "Fuchsia-Gruvbox" -c "Groovy FuchsiaOS Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/Fuchsia-Gruvbox" -n "Fuchsia-Gruvbox" -c "Groovy FuchsiaOS Windows Extra Large Cursors."
 ```
 
 ###### Fuchsia Solarized Dark
 
 ```bash
-npx cbmp -d 'svg/original' -o 'bitmaps/Fuchsia-Solarized-Dark' -bc '#002b36' -oc '#839496'
-ctgen build.toml -d 'bitmaps/Fuchsia-Solarized-Dark' -n 'Fuchsia-Solarized-Dark' -c 'Solarized Dark FuchsiaOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/Fuchsia-Solarized-Dark" -bc "#002b36" -oc "#839496"
+
+ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Solarized-Dark" -n "Fuchsia-Solarized-Dark" -c "Solarized Dark FuchsiaOS XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/Fuchsia-Solarized-Dark" -n "Fuchsia-Solarized-Dark" -c "Solarized Dark FuchsiaOS Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/Fuchsia-Solarized-Dark" -n "Fuchsia-Solarized-Dark" -c "Solarized Dark FuchsiaOS Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/Fuchsia-Solarized-Dark" -n "Fuchsia-Solarized-Dark" -c "Solarized Dark FuchsiaOS Windows Extra Large Cursors."
 ```
 
 ###### Fuchsia Solarized Light
 
 ```bash
-npx cbmp -d 'svg/original' -o 'bitmaps/Fuchsia-Solarized-Light' -bc '#839496' -oc '#002b36'
-ctgen build.toml -d 'bitmaps/Fuchsia-Solarized-Light' -n 'Fuchsia-Solarized-Light' -c 'Solarized Light FuchsiaOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/Fuchsia-Solarized-Light" -bc "#839496" -oc "#002b36"
+
+ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Solarized-Light" -n "Fuchsia-Solarized-Light" -c "Solarized Light FuchsiaOS XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/Fuchsia-Solarized-Light" -n "Fuchsia-Solarized-Light" -c "Solarized Light FuchsiaOS Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/Fuchsia-Solarized-Light" -n "Fuchsia-Solarized-Light" -c "Solarized Light FuchsiaOS Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/Fuchsia-Solarized-Light" -n "Fuchsia-Solarized-Light" -c "Solarized Light FuchsiaOS Windows Extra Large Cursors."
 ```
 
 ###### Fuchsia Dracula
 
 ```bash
-npx cbmp -d 'svg/original' -o 'bitmaas/Fuchsia-Dracula' -bc '#282a36' -oc '#f8f8f2'
-ctgen build.toml -d 'bitmaps/Fuchsia-Dracula' -n 'Fuchsia-Dracula' -c 'Dracula FuchsiaOS cursors.'
+npx cbmp -d "svg" -o "bitmaas/Fuchsia-Dracula" -bc "#282a36" -oc "#f8f8f2"
+
+ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Dracula" -n "Fuchsia-Dracula" -c "Dracula FuchsiaOS XCursors."
+ctgen configs/win_rg.build.toml -d "bitmaps/Fuchsia-Dracula" -n "Fuchsia-Dracula" -c "Dracula FuchsiaOS Windows Regular Cursors."
+ctgen configs/win_lg.build.toml -d "bitmaps/Fuchsia-Dracula" -n "Fuchsia-Dracula" -c "Dracula FuchsiaOS Windows Large Cursors."
+ctgen configs/win_xl.build.toml -d "bitmaps/Fuchsia-Dracula" -n "Fuchsia-Dracula" -c "Dracula FuchsiaOS Windows Extra Large Cursors."
 ```
 
 ## Testing Cursor

@@ -41,7 +41,7 @@ win_name = 'Cross'
 png = 'crossed_circle.png'
 x_hotspot = 33
 y_hotspot = 33
-win_name = 'Unavailiable'
+win_name = 'Unavailable'
 
 [cursors.hand1]
 png = 'hand1.png'

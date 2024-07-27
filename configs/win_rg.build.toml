@@ -27,11 +27,11 @@ win_name = 'Grabbing'
 
 [cursors.bottom_left_corner]
 png = 'bottom_left_corner.png'
-win_name = 'Dng2'
+win_name = 'Dgn2'
 
 [cursors.bottom_right_corner]
 png = 'bottom_right_corner.png'
-win_name = 'Dng1'
+win_name = 'Dgn1'
 
 [cursors.cross]
 png = 'cross.png'

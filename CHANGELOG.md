@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changes
+
+-   Easy to follow build instructions
+
 ### Issue Fixes
 
 -   Fixed `person` and `pin` cursor #16

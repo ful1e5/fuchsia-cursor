@@ -185,13 +185,13 @@ npx cbmp render.json
 To build Windows cursor with size `16`:
 
 ```bash
-ctgen configs/x.build.toml -s 16 -p windows -d "bitmaps/Fuchsia" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS XCursors with size 16"
+ctgen configs/win_rg.build.toml -s 16 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS Windows Cursors with size 16"
 ```
 
 You can also customize output directory with `-o` option:
 
 ```bash
-ctgen configs/win_xl.build.toml -s 16 -p windows -d "bitmaps/Fuchsia" -o "out" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS Windows Cursors with size 16"
+ctgen configs/win_xl.build.toml -s 16 -d "bitmaps/Fuchsia" -o "out" -n "Fuchsia" -c "First OpenSource port of FuchsiaOS Windows Cursors with size 16"
 ```
 
 ##### Customize XCursor size
@@ -199,13 +199,13 @@ ctgen configs/win_xl.build.toml -s 16 -p windows -d "bitmaps/Fuchsia" -o "out" -
 To build XCursor with size `16`:
 
 ```bash
-ctgen configs/x.build.toml -s 16 -p x11 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS Cursors with size 16"
+ctgen configs/x.build.toml -s 16 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS XCursors with size 16"
 ```
 
 You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-ctgen configs/x.build.toml -s 16 18 24 32 -p x11 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS Cursors with size 16"
+ctgen configs/x.build.toml -s 16 18 24 32 -d "bitmaps/Fuchsia" -n "Fuchsia" -c "FuchsiaOS XCursors"
 ```
 
 #### Examples
@@ -218,9 +218,22 @@ npx cbmp -d "svg" -o "bitmaps/Fuchsia-Hacker" -bc "#00FE00" -oc "#000000"
 
 After rendering custom color you have to build cursor through `ctgen`:
 
-```bash
-ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS XCursors."
-```
+-   XCursor:
+    ```bash
+    ctgen configs/x.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS XCursors."
+    ```
+-   Windows Regular Cursor:
+    ```bash
+    ctgen configs/win_rg.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS Regular Windows Cursors."
+    ```
+-   Windows Large Cursor:
+    ```bash
+    ctgen configs/win_lg.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS Large Windows Cursors."
+    ```
+-   Windows Extra Large Cursor:
+    ```bash
+    ctgen configs/win_xl.build.toml -d "bitmaps/Fuchsia-Hacker" -n "Fuchsia-Hacker" -c "Green and Black FuchsiaOS Extra Large Windows Cursors."
+    ```
 
 Afterwards, Generated theme can be found in the `themes` directory.
 
